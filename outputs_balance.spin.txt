@@ -1,0 +1,150 @@
+!THLQ	 D   r2c
+!THIC	 D   r2c
+!TBAR     D   r2c
+!TBAR     D Y tsk 2163 2164 2165 2166
+!RFF     H seq
+!RCHG    H seq
+!QI      D seq
+!QO      D seq
+!QI      M seq
+!QO      M seq
+!PRE     D seq
+!EVAP    D seq
+!PRE     M seq
+!EVAP    M seq
+!PRE	 r2c H
+!HCPC     nc D gru 14
+!TCTOPC   nc D gru 14
+FSNO     nc D 
+SNO      nc D 
+!FSNO     nc D gru 6
+!SNO      nc D gru 6
+TMIN     nc Y gru 1 
+TMIN     nc Y gru 2 
+TMIN     nc Y gru 3 
+TMIN     nc Y gru 4
+TMIN     nc Y gru 5
+TMIN     nc Y gru 6
+TMIN     nc Y gru 7
+TMIN     nc Y gru 8
+TMIN     nc Y gru 9
+TMIN     nc Y gru 10
+TMIN     nc Y gru 11
+TMIN     nc Y gru 12
+TMIN     nc Y gru 13
+TMIN     nc Y gru 14
+TMIN     nc Y gru 15
+TMAX     nc Y gru 1 
+TMAX     nc Y gru 2 
+TMAX     nc Y gru 3 
+TMAX     nc Y gru 4
+TMAX     nc Y gru 5
+TMAX     nc Y gru 6
+TMAX     nc Y gru 7
+TMAX     nc Y gru 8
+TMAX     nc Y gru 9
+TMAX     nc Y gru 10
+TMAX     nc Y gru 11
+TMAX     nc Y gru 12
+TMAX     nc Y gru 13
+TMAX     nc Y gru 14
+TMAX     nc Y gru 15
+DZAA     nc Y gru 1 
+DZAA     nc Y gru 2 
+DZAA     nc Y gru 3 
+DZAA     nc Y gru 4
+DZAA     nc Y gru 5
+DZAA     nc Y gru 6
+DZAA     nc Y gru 7
+DZAA     nc Y gru 8
+DZAA     nc Y gru 9
+DZAA     nc Y gru 10
+DZAA     nc Y gru 11
+DZAA     nc Y gru 12
+DZAA     nc Y gru 13
+DZAA     nc Y gru 14
+DZAA     nc Y gru 15
+TZAA     nc Y gru 1 
+TZAA     nc Y gru 2 
+TZAA     nc Y gru 3 
+TZAA     nc Y gru 4
+TZAA     nc Y gru 5
+TZAA     nc Y gru 6
+TZAA     nc Y gru 7
+TZAA     nc Y gru 8
+TZAA     nc Y gru 9
+TZAA     nc Y gru 10
+TZAA     nc Y gru 11
+TZAA     nc Y gru 12
+TZAA     nc Y gru 13
+TZAA     nc Y gru 14
+TZAA     nc Y gru 15
+ALT_ENV     nc Y gru 1 
+ALT_ENV     nc Y gru 2 
+ALT_ENV     nc Y gru 3 
+ALT_ENV     nc Y gru 4
+ALT_ENV     nc Y gru 5
+ALT_ENV     nc Y gru 6
+ALT_ENV     nc Y gru 7
+ALT_ENV     nc Y gru 8
+ALT_ENV     nc Y gru 9
+ALT_ENV     nc Y gru 10
+ALT_ENV     nc Y gru 11
+ALT_ENV     nc Y gru 12
+ALT_ENV     nc Y gru 13
+ALT_ENV     nc Y gru 14
+ALT_ENV     nc Y gru 15
+ALT_DOY     nc Y gru 1 
+ALT_DOY     nc Y gru 2 
+ALT_DOY     nc Y gru 3 
+ALT_DOY     nc Y gru 4
+ALT_DOY     nc Y gru 5
+ALT_DOY     nc Y gru 6
+ALT_DOY     nc Y gru 7
+ALT_DOY     nc Y gru 8
+ALT_DOY     nc Y gru 9
+ALT_DOY     nc Y gru 10
+ALT_DOY     nc Y gru 11
+ALT_DOY     nc Y gru 12
+ALT_DOY     nc Y gru 13
+ALT_DOY     nc Y gru 14
+ALT_DOY     nc Y gru 15
+!PREC          nc M  Y  #Total Precipitation
+!PRECRN        nc M  Y  # Total Liquid Precipitation 
+!PRECSNO       nc M  Y  # Total Solid Precipitation
+!ROF           nc M  Y  # Total runoff (from all surface and subsurface components) 
+!RFF           nc M  Y  # Total runoff (from all surface,subsurface, and groundwater components  
+!QO            nc M  Y  # Flow leaving the channel (discharge)
+!ET            nc M  Y  # Evapotranspiration
+!STGW          nc M  Y  # Total Water Storage
+!LQWSSOL       nc M  Y  # Liquid water storage in the soil.
+!FZWSSOL       nc M  Y  # Frozen water storage in the soil.
+!THLQSOL       nc M  Y  # Liquid water storage in the soil.
+!THICSOL       nc M  Y  # Frozen water storage in the soil.
+!SNO           nc M  Y  # Snow mass
+!LQWSSNO       nc M  Y  # Liquid water content of the snow
+!ZSNO          nc M  Y  # Snow Depth
+!PREC          nc M  Y gru 3  # PREC for Glacier GRU
+!ET            nc M  Y gru 3  # ET for Glacier GRU
+!ROF           nc M  Y gru 3
+!RFF           nc M  Y gru 3
+!SNO           nc M  Y gru 3
+!LQWSSNO       nc M  Y gru 3
+!ZSNO          nc M  Y gru 3
+!STGW          nc M  Y gru 3
+!SNO           nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!LQWSSNO       nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!ZSNO          nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!RHOSNO        nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!TSNO          nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!ALBT          nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!ALVS          nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!ALIR          nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!DRAINSNO      nc D  gru 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+!FSIN nc H
+!FLIN nc H
+!TA   nc H
+!QA   nc H
+!PRES nc H
+!UV   nc H
+!PRE  nc H
