@@ -1,4 +1,4 @@
-# Mackenzie River Basin
+# Mackenzie River Basin Setup
  
 This is the final MESH setup of the Mackenzie River Basin (MRB) which was used to run the simulations for the historical run using GEM-CaPA data (2005-2016) and the climate and land cover/use change runs for the period 1951-2100 forced with the bias corrected downscaled scenarios (CanRCM4-WGC). Model setup and validation are described in this preprint (which is now accepted by the Journal of Hydrology):
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791947
