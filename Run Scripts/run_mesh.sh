@@ -433,38 +433,38 @@ then
 		ncecat -O -F -L 1 -u gru $THETA 'THETA_M.nc'
 		echo $LATF
 		ncecat -O -F -L 1 -u gru $LATF 'LATFLW_M.nc'
-		# ncecat -O -F -L 1 -u level LATFLW_D_IG*.nc 'LATFLW_D.nc'
-		# # ncecat -O -F -L 1 -u gru $TZAA 'TZAA_ttol_0.1.nc'
-		# rm $THETA $LATF LATFLW_D_IG*.nc
-		# # ncap2 -O -F -v -S ../Permafrost.ncap Tmin_max.nc permafrost.nc
+		ncecat -O -F -L 1 -u level LATFLW_D_IG*.nc 'LATFLW_D.nc'
+		ncecat -O -F -L 1 -u gru $TZAA 'TZAA_ttol_0.1.nc'
+		rm $THETA $LATF LATFLW_D_IG*.nc
+		ncap2 -O -F -v -S ../Permafrost.ncap Tmin_max.nc permafrost.nc
 
-		# # st1="permafrost_gru_fraction_1=array($missing,0,permafrost_1);permafrost_gru_fraction_1.set_miss($missing);permafrost_gru_fraction_1=GRU*permafrost_1;permafrost_grid_fraction_1=permafrost_gru_fraction_1.sum($gru);"
-		# # st2="permafrost_gru_area_1=array($missing,0,permafrost_gru_fraction_1);permafrost_gru_area_1.set_miss($missing);permafrost_gru_area_1=permafrost_gru_fraction_1*GridArea/1e6;Permafrost_Area_GRU_1=permafrost_gru_area_1.sum($lat,$lon);"
-		# # st3="permafrost_grid_area_1=array($missing,0,permafrost_grid_fraction_1);permafrost_grid_area_1.set_miss($missing);permafrost_grid_area_1=permafrost_grid_fraction_1*GridArea/1e6;Permafrost_Area_1=permafrost_grid_area_1.sum($lat,$lon);"
-		# # #st4="permafrost_gru_area@_FillValue=$missing;"
-		# # echo $st1 > Permafraction.ncap
-		# # echo $st2 >> Permafraction.ncap
-		# # echo $st3 >> Permafraction.ncap
-		# # st1="permafrost_gru_fraction_2=array($missing,0,permafrost_2);permafrost_gru_fraction_2.set_miss($missing);permafrost_gru_fraction_2=GRU*permafrost_2;permafrost_grid_fraction_2=permafrost_gru_fraction_2.sum($gru);"
-		# # st2="permafrost_gru_area_2=array($missing,0,permafrost_gru_fraction_2);permafrost_gru_area_2.set_miss($missing);permafrost_gru_area_2=permafrost_gru_fraction_2*GridArea/1e6;Permafrost_Area_GRU_2=permafrost_gru_area_2.sum($lat,$lon);"
-		# # st3="permafrost_grid_area_2=array($missing,0,permafrost_grid_fraction_2);permafrost_grid_area_2.set_miss($missing);permafrost_grid_area_2=permafrost_grid_fraction_2*GridArea/1e6;Permafrost_Area_2=permafrost_grid_area_2.sum($lat,$lon);"
-		# # echo $st1 >> Permafraction.ncap
-		# # echo $st2 >> Permafraction.ncap
-		# # echo $st3 >> Permafraction.ncap
-		# # st1="permafrost_gru_fraction_3=array($missing,0,permafrost_3);permafrost_gru_fraction_3.set_miss($missing);permafrost_gru_fraction_3=GRU*permafrost_3;permafrost_grid_fraction_3=permafrost_gru_fraction_3.sum($gru);"
-		# # st2="permafrost_gru_area_3=array($missing,0,permafrost_gru_fraction_3);permafrost_gru_area_3.set_miss($missing);permafrost_gru_area_3=permafrost_gru_fraction_3*GridArea/1e6;Permafrost_Area_GRU_3=permafrost_gru_area_3.sum($lat,$lon);"
-		# # st3="permafrost_grid_area_3=array($missing,0,permafrost_grid_fraction_3);permafrost_grid_area_3.set_miss($missing);permafrost_grid_area_3=permafrost_grid_fraction_3*GridArea/1e6;Permafrost_Area_3=permafrost_grid_area_3.sum($lat,$lon);"
-		# # echo $st1 >> Permafraction.ncap
-		# # echo $st2 >> Permafraction.ncap
-		# # echo $st3 >> Permafraction.ncap
-		# # #echo $st4 >> Permafraction.ncap
-		# # #echo $st5 >> Permafraction.ncap
-		# # cdo -selname,GRU,GridArea $ddb.nc tmp.nc
-		# # ncks -A tmp.nc permafrost.nc
-		# # ncap2 -4 -O -F -v -S Permafraction.ncap permafrost.nc permafrost2.nc
-		# # ncap2 -4 -A -F -v -S Permafraction.ncap permafrost.nc permafrost2.nc
-		# # ncks  -A -F -4 -L 1 permafrost2.nc permafrost.nc
-		# # rm tmp.nc permafrost2.nc
+		st1="permafrost_gru_fraction_1=array($missing,0,permafrost_1);permafrost_gru_fraction_1.set_miss($missing);permafrost_gru_fraction_1=GRU*permafrost_1;permafrost_grid_fraction_1=permafrost_gru_fraction_1.sum($gru);"
+		st2="permafrost_gru_area_1=array($missing,0,permafrost_gru_fraction_1);permafrost_gru_area_1.set_miss($missing);permafrost_gru_area_1=permafrost_gru_fraction_1*GridArea/1e6;Permafrost_Area_GRU_1=permafrost_gru_area_1.sum($lat,$lon);"
+		st3="permafrost_grid_area_1=array($missing,0,permafrost_grid_fraction_1);permafrost_grid_area_1.set_miss($missing);permafrost_grid_area_1=permafrost_grid_fraction_1*GridArea/1e6;Permafrost_Area_1=permafrost_grid_area_1.sum($lat,$lon);"
+		#st4="permafrost_gru_area@_FillValue=$missing;"
+		echo $st1 > Permafraction.ncap
+		echo $st2 >> Permafraction.ncap
+		echo $st3 >> Permafraction.ncap
+		st1="permafrost_gru_fraction_2=array($missing,0,permafrost_2);permafrost_gru_fraction_2.set_miss($missing);permafrost_gru_fraction_2=GRU*permafrost_2;permafrost_grid_fraction_2=permafrost_gru_fraction_2.sum($gru);"
+		st2="permafrost_gru_area_2=array($missing,0,permafrost_gru_fraction_2);permafrost_gru_area_2.set_miss($missing);permafrost_gru_area_2=permafrost_gru_fraction_2*GridArea/1e6;Permafrost_Area_GRU_2=permafrost_gru_area_2.sum($lat,$lon);"
+		st3="permafrost_grid_area_2=array($missing,0,permafrost_grid_fraction_2);permafrost_grid_area_2.set_miss($missing);permafrost_grid_area_2=permafrost_grid_fraction_2*GridArea/1e6;Permafrost_Area_2=permafrost_grid_area_2.sum($lat,$lon);"
+		echo $st1 >> Permafraction.ncap
+		echo $st2 >> Permafraction.ncap
+		echo $st3 >> Permafraction.ncap
+		st1="permafrost_gru_fraction_3=array($missing,0,permafrost_3);permafrost_gru_fraction_3.set_miss($missing);permafrost_gru_fraction_3=GRU*permafrost_3;permafrost_grid_fraction_3=permafrost_gru_fraction_3.sum($gru);"
+		st2="permafrost_gru_area_3=array($missing,0,permafrost_gru_fraction_3);permafrost_gru_area_3.set_miss($missing);permafrost_gru_area_3=permafrost_gru_fraction_3*GridArea/1e6;Permafrost_Area_GRU_3=permafrost_gru_area_3.sum($lat,$lon);"
+		st3="permafrost_grid_area_3=array($missing,0,permafrost_grid_fraction_3);permafrost_grid_area_3.set_miss($missing);permafrost_grid_area_3=permafrost_grid_fraction_3*GridArea/1e6;Permafrost_Area_3=permafrost_grid_area_3.sum($lat,$lon);"
+		echo $st1 >> Permafraction.ncap
+		echo $st2 >> Permafraction.ncap
+		echo $st3 >> Permafraction.ncap
+		#echo $st4 >> Permafraction.ncap
+		#echo $st5 >> Permafraction.ncap
+		cdo -selname,GRU,GridArea $ddb.nc tmp.nc
+		ncks -A tmp.nc permafrost.nc
+		ncap2 -4 -O -F -v -S Permafraction.ncap permafrost.nc permafrost2.nc
+		ncap2 -4 -A -F -v -S Permafraction.ncap permafrost.nc permafrost2.nc
+		ncks  -A -F -4 -L 1 permafrost2.nc permafrost.nc
+		rm tmp.nc permafrost2.nc
 	cd ..	
 	# #mv CLASS1 RESULTS
 	mv RESULTS RESULTS_$STYR1-$ENYR3
