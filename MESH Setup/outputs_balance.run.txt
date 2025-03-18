@@ -1,6 +1,6 @@
 PREC	 nc D
 ET       nc D
-ROF      nc D
+RFF      nc D
 LQWS	 nc D
 FRWS     nc D
 PRECRN   nc D
