@@ -1,0 +1,10 @@
+This folder contains the scripts used to run the MRB MESH model for climate and land cover/use change. The scripts contain some specific settings for the simulations on USASK Copernicus that need to be changed when run elsewhere.
+
+1. Prepare.sh    This script prepares folders, and creates link_inputs.nc.sh and mesh.slurm from templates
+2. Settings.sh   contains some general startup settings that depend on the dataset (e.g. surface or 40m variable height). It sets the run name, and calls link_inputs_nc.sh to create links to the forcing files and other model setup files. It also modifies the CLASS.ini tempelate
+3. link_inputs.nc.template.sh           A template shell script for linking forcing and model input files
+4. mesh.template.slurm                  A template job script that sets the environment, the job requirements and calls the mesh_run.sh upon submission. The mesh run script can be either of the coming scripts. 
+5. run_mesh.sh                          The main run script that edits the run options, runs MESH for spinning and continuous simulation, and post-processes the output (mainly for permafrost). It sources Settings.sh
+6. run_mesh.LU.sh                       The main run script for running the land/cover change scenario on top of the climate change ones. It switches the ddb at the set times: 2021 and 2066                                                                                                                                                                         
+                                                                                                                                                                         
+                                                                                                                                                                        
